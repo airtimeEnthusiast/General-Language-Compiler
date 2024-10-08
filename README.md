@@ -68,4 +68,4 @@ WHILE i < 10 {
 }
 3 2 1 4 2
 ```
-[Source Code](https://github.com/airtimeEnthusiast/Simple_Compiler/tree/main))
+[Source Code](https://github.com/airtimeEnthusiast/Simple_Compiler/tree/main)
