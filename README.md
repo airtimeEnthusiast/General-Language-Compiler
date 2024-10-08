@@ -33,10 +33,6 @@ A small compiler that reads and executes a small program. The compiler then inte
 | num_list     → | NUM                                                                  |
 | num_list     → |NUM num_list                                                          |
 
-### Run
-
-To run this project:
-
 ### How to Use
 
  Write your input program in a text file, e.g., 'input_program.txt' or use one of the provided test cases
