@@ -33,35 +33,50 @@ A small compiler that reads and executes a small program. The compiler then inte
 | num_list     → | NUM                                                                  |
 | num_list     → |NUM num_list                                                          |
 
-### How to Use
-
- Write your input program in a text file, e.g., 'input_program.txt' or use one of the provided test cases
+### Example Input
+Programs are in text file e.g., 'input_program.txt'.
+| Input Program Lines              | Statements								|
+|-------------------|---------------------------------------------------------------------------|
+| 1 	    | contains declaration statements for the variables *a*, *b*, *c*, and *d*.
+| 3-6         | assigns the variables to integers.
+| 7-10        | contains a SWITCH statment where CASE 2 is executed and the value of *b* is "2".
+| 11           | has an ADD statement where *d* now has the value 5.
+| 12-15       | defines a WHILE loop where d is decremented and printed 5 times.
+| 17-19       | contains an IF statement that evaluates to true so the value of a is printed.
+| 32           | contains a list of indexes: 10,2,3, and 1 for variables, a,b,c,d to be stored in a input vector. This keeps track of which values to read at runtime.
+```c++
+1 a, b, c, d;
+2 {
+3 	a = 1 ;
+4	b = 2 ;
+5	c = 3 ;
+6	d = 4 ;
+7		SWITCH b {
+8			CASE 1: { output a;}
+9			CASE 2: { output b;}
+10		}
+11		d = d + 1;
+12	WHILE d > 0 {
+13		output d;
+14		d = d-1;
+15	}
+16
+17	IF c > b { 
+18		output a;
+19	}
+20 }
+21 10 2 3 1
+```
+### Execution
+- The input file above is fed into the program via standard input.
 ```bash
-  ./a.out < input_program
+  ./a.out < input_program.txt
 ```
 
-### Example input
+#### Output
+- Will print every output statement in order.
+<p align="left">
+  <img src="assets/compiler_output.png?raw=true" alt="cat" />
+</p>
 
-```css
-a, b;
-{
-  a , b, c, i;
-{
-a = 1;
-b = 1;
-output a;
-output b;
-
-i = 3;
-WHILE i < 10 {
-        c = a + b;
-	output c;
-        a = b;
-        b = c;
-	i = i+1;
-}
-
-}
-3 2 1 4 2
-```
 [Source Code](https://github.com/airtimeEnthusiast/Simple_Compiler/tree/main)
