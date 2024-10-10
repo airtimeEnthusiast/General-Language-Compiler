@@ -37,13 +37,13 @@ A small compiler that reads and executes a small program. The compiler then inte
 Programs are in text file e.g., 'input_program.txt'.
 | Input Program Lines              | Statements								|
 |-------------------|---------------------------------------------------------------------------|
-| 1 	    | contains declaration statements for the variables *a*, *b*, *c*, and *d*.
-| 3-6         | assigns the variables to integers.
-| 7-10        | contains a SWITCH statment where CASE 2 is executed and the value of *b* is "2".
-| 11           | has an ADD statement where *d* now has the value 5.
-| 12-15       | defines a WHILE loop where d is decremented and printed 5 times.
-| 17-19       | contains an IF statement that evaluates to true so the value of a is printed.
-| 32           | contains a list of indexes: 10,2,3, and 1 for variables, a,b,c,d to be stored in a input vector. This keeps track of which values to read at runtime.
+| 1 	    | Contains declaration statements for the variables *a*, *b*, *c*, and *d*.
+| 3-6         | Assigns the variables to integers.
+| 7-10        | Contains a SWITCH statment where CASE 2 is executed and the value of *b* is "2".
+| 11           | Has an ADD statement where *d* now has the value 5.
+| 12-15       | Defines a WHILE loop where d is decremented and printed 5 times.
+| 17-19       | Contains an IF statement that evaluates to true so the value of a is printed.
+| 32           | Lists some indices: 10, 2, 3, and 1 for the variables a, b, c, and d to be stored in an input vector. This keeps track of which values to read at runtime.
 ```c++
 1 a, b, c, d;
 2 {
